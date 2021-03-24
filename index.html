@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta>
+  <meta>
+  <title>Promises Challenge</title>
+  <style>
+    body {
+      font-family: Courier, monospace;
+      text-align: center;
+    }
+
+    code {
+      font-weight: bold;
+      background-color: darkslateblue;
+      color: aliceblue;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript" src="index.js" ></script>
+  <div>
+    <h1>
+      Promises Challenge
+    </h1>
+    <p>
+      Using Javascript's Fetch API and the following URL <a href="https://source.unsplash.com/random/" rel="external" target="_blank" >https://source.unsplash.com/random/</a> create the following functions:
+    </p>
+    <p>
+      1. A function called <code>apiPending</code> that makes a request to the URL above and returns a Promise object. When logging the function call it should show a Promise in the pending state.
+    </p>
+    <p>
+      2. A function called <code>apiPromise</code> that replicates the previous one and consumes the promise scheduling a callback when the promise has resolved into either  fulfilled or rejected. The callbacks should log the response on fulfillment or on rejection. Regardless of the response's outcome log the following message <code>"will execute regardless!"</code>.
+    </p>
+    <p>
+      3. A function called <code>apiAsync</code> that uses the keywords <code>async</code> & <code>await</code> that logs the following: <code>"apiAsync response is:"</code> followed by the actual response if the Promise is fulfilled and <code>"apiAsync error is:"</code> followed by the actual error if the Promise is rejected. Finally return a response.
+    </p>
+
+    <p>
+      4. A function called <code>apiSearch</code> that accepts any number of <code>keywords</code> as arguments that fetches a random search term from https://source.unsplash.com/ and returns a promise object.
+    </p>
+    <p>
+      5. A function that waits for both <code>apiSearch</code> and <code>apiSearch</code> and adds both images to the HTML document.
+    </p>
+    <div id="imagesContainer"></div>
+    <div id="imagesContainer2"></div>
+  </div>
+</body>
+
+</html>
